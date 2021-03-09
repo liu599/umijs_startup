@@ -18,12 +18,14 @@ export default {
   publicPath: "/",
   runtimePublicPath: true,
   exportStatic: {},
-  history: {type: 'browser'},
+  history: {
+    type: 'browser'
+  },
   fastRefresh: {},
   // ssr: { },
   dva: {
-    hmr: true,
     immer: true,
+    hmr: false,
     skipModelValidate: true,
   },
   crossorigin: true,

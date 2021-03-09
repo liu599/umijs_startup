@@ -1,15 +1,19 @@
 {
+  "version": "1.0.0",
+  "author": "Tokei <970228409@qq.com>",
+  "license": "GPL-3.0-or-later",
   "private": true,
   "scripts": {
     "start": "umi dev",
     "build": "umi build",
     "test": "umi test",
-    "lint": "eslint {src,mock,tests}/**/*.{js,jsx} --fix",
-    "precommit": "lint-staged"
+    "old-lint": "eslint {src,mock,tests}/**/*.{js,jsx} --fix",
+    "old-precommit": "lint-staged"
   },
   "dependencies": {
-    "dva": "^2.4.1",
+    "dva": "^2.6.0-beta.22",
     "immer": "^8.0.1",
+    "lodash": "^4.17.21",
     "query-string": "^6.14.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -28,6 +32,9 @@
     "lint-staged": "^7.2.2",
     "react-test-renderer": "^16.7.0",
     "umi": "^3.0.0"
+  },
+  "compilerOptions": {
+    "jsx": "react"
   },
   "engines": {
     "node": ">=8.0.0"
